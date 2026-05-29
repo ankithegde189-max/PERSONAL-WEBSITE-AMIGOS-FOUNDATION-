@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio website for Ankit A Hegde, Information Science student focused on web development, AI tools, and practical software projects." />
+    <title>Ankit A Hegde | Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Ankit A Hegde home">AAH</a>
+        <nav aria-label="Primary navigation">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfolio Website</p>
+                <h1>Ankit A Hegde</h1>
+                <p class="subtitle">Information Science student building practical web, AI tooling, and hardware
+                    automation projects.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#contact">Contact Me</a>
+                    <a class="button secondary" href="https://github.com/ankithegde189-max" target="_blank"
+                        rel="noreferrer">GitHub</a>
+                </div>
+            </div>
+            <aside class="profile-panel" aria-label="Profile summary">
+                <div class="avatar" aria-hidden="true">AH</div>
+                <dl>
+                    <div>
+                        <dt>Degree</dt>
+                        <dd>B.Tech ISE</dd>
+                    </div>
+                    <div>
+                        <dt>Graduation</dt>
+                        <dd>2028</dd>
+                    </div>
+                </dl>
+            </aside>
+        </section>
+
+        <section class="section summary-section">
+            <div>
+                <p class="section-label">Professional Summary</p>
+                <h2>Curious builder with strong fundamentals and a project-first mindset.</h2>
+            </div>
+            <p>Motivated and detail-oriented Information Science engineering student with knowledge of C, Python, HTML,
+                CSS, and web development fundamentals. Experienced with Arduino projects, hackathons, AI tools, prompt
+                engineering, and real-world problem-solving activities.</p>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="section-label">Capabilities</p>
+                <h2>Technical and soft skills</h2>
+            </div>
+            <div class="skill-grid">
+                <article>
+                    <h3>Technical Skills</h3>
+                    <ul class="tags">
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Web Development</li>
+                        <li>AI Tools</li>
+                        <li>Prompt Engineering</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Soft Skills</h3>
+                    <ul class="tags">
+                        <li>Communication</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-label">Work</p>
+                <h2>Projects and experience</h2>
+            </div>
+            <div class="timeline">
+                <article>
+                    <span>Arduino</span>
+                    <h3>Sensor and automation builds</h3>
+                    <p>Built Arduino-based projects involving sensors, automation, and practical problem-solving.</p>
+                </article>
+                <article>
+                    <span>Hackathons</span>
+                    <h3>Collaborative web development</h3>
+                    <p>Participated in hackathons to improve teamwork, creativity, communication, and delivery under
+                        time limits.</p>
+                </article>
+                <article>
+                    <span>Frontend</span>
+                    <h3>Responsive web pages</h3>
+                    <p>Developed responsive pages using HTML and CSS while strengthening front-end fundamentals.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section split-section" id="education">
+            <div>
+                <p class="section-label">Education</p>
+                <h2>Academic background</h2>
+            </div>
+            <div class="education-list">
+                <article>
+                    <h3>Presidency University, Bangalore</h3>
+                    <p>B.Tech in Information Science | Expected 2028</p>
+                </article>
+                <article>
+                    <h3>SIR M V PU College, Davangere</h3>
+                    <p>PUC | 95.2% | 2024</p>
+                </article>
+                <article>
+                    <h3>Chandana High School, Sirsi</h3>
+                    <p>SSLC | 99.2% | 2022</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div>
+                <p class="section-label">Contact</p>
+                <h2>Let us build something useful.</h2>
+                <div class="contact-links">
+                    <a href="tel:+918618377536">+91 8618377536</a>
+                    <a href="mailto:ankithegde189@gmail.com">ankithegde189@gmail.com</a>
+                    <a href="https://linkedin.com/in/ankit-a-hegde-27a355350" target="_blank"
+                        rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <label>
+                    Name
+                    <input name="name" autocomplete="name" required />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="button primary" type="submit">Send Message</button>
+                <p id="form-status" class="form-status" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ankit A Hegde. Built with HTML, CSS, and Node.js.</p>
+        <p id="api-status">Checking backend...</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
